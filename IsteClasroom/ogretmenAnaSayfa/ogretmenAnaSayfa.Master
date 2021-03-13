@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ogretmenAnaSayfa.master.cs" Inherits="IsteClasroom.ogretmenAnaSayfa.ogretmenAnaSayfa" %>
+
+<!DOCTYPE html>   
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link href="Styles/style.css" rel="stylesheet" />
+<title>Öğretmen Panel</title>
+<link href="../Styles/style.css" rel="stylesheet" />
+<html>
+    
+    <head>
+    <div style="text-align: center; font-weight: 700;" class="auto-style1">
+
+        <h1><span class="yeniStil1">ISTE-CLASSROOM</span></h1>
+
+    </div>   
+</head>
+    <body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>ISTE</h2>
+        <ul>
+            <li><a href="ogretmenSinifEkle.aspx"><i class="fas fa-home"></i>Sınıf Ekle</a></li>
+            <li><a href="ogretmenSiniflarim.aspx"><i class="fas fa-user"></i>Sınıflarım</a></li
+        </ul> 
+    </div>
+    
+    <div class="main_content">
+        <asp:ContentPlaceHolder ID="MainContent1" runat="server">
+        
+             </asp:ContentPlaceHolder>
+    </div>
+       
+</div>
+</body>

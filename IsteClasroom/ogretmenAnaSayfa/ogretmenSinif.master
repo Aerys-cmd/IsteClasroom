@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ogretmenAnaSayfa/ogretmenAnaSayfa.Master" AutoEventWireup="true" CodeBehind="ogretmenSinif.master.cs" Inherits="IsteClasroom.ogretmenAnaSayfa.ogretmenSinif" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"> 
+ </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent1" runat="server">    
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+     <div style="height:10px"></div>
+    <div style="height:10px"></div>
+    <div style="text-align: center; font-weight: 700;" class="auto-style1">
+
+        <h1><asp:Label ID="Label1" CssClass="yeniStil1" runat="server" Text="SınıfAdı"></asp:Label></h1>
+
+    </div>   
+     <div style="height:10px"></div>
+
+<div class="topnav">
+  <a class="active" href="sinifListe.aspx?SinifID=unk">Sınıf Listesi</a>
+  <a href="ogrtOdevler.aspx">Ödevler</a>
+  <a href="odevEkle.aspx">Ödev Ekle</a>
+  <a href="duyuruPanel.aspx">Duyuru Ekle</a>
+</div>
+  
+<div style="width: 100%; margin-left: 30px;">
+    <asp:ContentPlaceHolder ID="MainContent1" runat="server"> 
+ </asp:ContentPlaceHolder>
+</div>
+
+</body>
+           
+</asp:Content>
+
+
+
+
